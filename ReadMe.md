@@ -6,10 +6,10 @@ a small git project in which I want to learn more about how to work with git and
 
 ## File structure
 
-- [complied/](./CodeWars/complied)
-  - [js/](./CodeWars/complied/js)
-- [unfinished/](./CodeWars/unfinished)
-  - [js/](./CodeWars/unfinished/js)
-- [workingOn](./CodeWars/workingOn)
-- [.gitignore](./CodeWars/.gitignore)
-- [ReadMe.md](./CodeWars/ReadMe.md)
+-   complied
+    -   js
+-   unfinished
+    -   js
+-   workingOn
+-   .gitignore
+-   ReadMe.md

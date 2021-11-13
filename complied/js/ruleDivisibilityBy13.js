@@ -57,7 +57,8 @@ Call `thirt` the function which processes this sequence of operations on an inte
 `thirt(321)` calculates 48, 48 and returns `48`
 */
 
-const thirt = (num) => {
+// with Loops
+const thirtLoop = (num) => {
     /** PseudoCode
      *
      *  input (num: number)
@@ -108,3 +109,17 @@ const thirt = (num) => {
     }
     return tmp;
 };
+
+// with Algo
+function thirtAlgo(n) {
+    // recrusive
+    // https://www.codewars.com/kata/reviews/56405b5b14a5373480000115/groups/5640fd8486ba719dd7000027
+    const nums = [1, 10, 9, 12, 3, 4];
+    var sum = ("" + n)
+        .split("")
+        .reverse()
+        .reduce((sum, v, i) => sum + v * nums[i % nums.length], 0);
+    return sum === n ? n : thirtAlgo(sum);
+}
+
+console.log(thirtAlgo(1234567));
